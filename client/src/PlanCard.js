@@ -4,10 +4,11 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 1px solid black;
-  background-color: #333;
-  color: #fff;
+  background-color: #1a1919;
+  color: #fffffe;
   width: 80%;
+  border-radius: 5px;
+  margin-top: 2rem;
 `;
 
 const PlanCard = (props) => {

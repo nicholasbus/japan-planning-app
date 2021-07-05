@@ -1,3 +1,5 @@
+/* COLOR PALETTE: https://coolors.co/d8222a-fffffe-1a1919 */
+
 .map-container {
   height: 500px;
   width: 500px;
@@ -5,7 +7,7 @@
 
 nav {
   height: 3rem;
-  background-color: #333;
+  background-color: #d8222a;
   display: flex;
   flex-direction: row;
 }
@@ -19,6 +21,6 @@ nav div {
 }
 
 nav div a {
-  color: white;
+  color: #fffffe;
   text-decoration: none;
 }
