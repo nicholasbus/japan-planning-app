@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import PlanCard from "./PlanCard";
+import styled from "styled-components";
 
 const mockPlans = [
   {
@@ -21,18 +22,27 @@ const Home = () => {
     setPlans(mockPlans);
   }, []);
 
+  const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  `;
+
   return (
     <>
-      {plans.map((plan, idx) => {
-        return (
-          <PlanCard
-            key={idx}
-            city_name={plan.city_name}
-            attraction={plan.attraction}
-            resource_name={plan.resource_name}
-          />
-        );
-      })}
+      <Container>
+        {plans.map((plan, idx) => {
+          return (
+            <PlanCard
+              key={idx}
+              city_name={plan.city_name}
+              attraction={plan.attraction}
+              resource_name={plan.resource_name}
+            />
+          );
+        })}
+      </Container>
     </>
   );
 };
