@@ -1,8 +1,18 @@
 /* COLOR PALETTE: https://coolors.co/d8222a-fffffe-1a1919 */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 
 .map-container {
   height: 500px;
-  width: 500px;
+  width: 1000px;
+  outline: 4px #1a1919 solid;
 }
 
 nav {
