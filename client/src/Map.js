@@ -67,8 +67,11 @@ const Map = () => {
 
   useEffect(() => {
     if (!map.current) return; // wait for the map to initialize
-    map.current.on("contextmenu", (e) => {
+    map.current.on("dblclick", (e) => {
       console.log(e.lngLat);
+      new mapboxgl.Marker()
+        .setLngLat([e.lngLat.lng, e.lngLat.lat])
+        .addTo(map.current);
     });
   });
 
